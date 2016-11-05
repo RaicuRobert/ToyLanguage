@@ -1,0 +1,152 @@
+____________________________
+
+Stack:
+(openRFile(a, test.in);readFile((a),x))
+(IF((x)) THEN((readFile((a),x);(print: (x))))ELSE((print: (0)));closeRFile((a)))
+
+StmTable:
+
+FileTable:
+
+Out:
+
+
+____________________________
+
+Stack:
+openRFile(a, test.in)
+readFile((a),x)
+(IF((x)) THEN((readFile((a),x);(print: (x))))ELSE((print: (0)));closeRFile((a)))
+
+StmTable:
+
+FileTable:
+
+Out:
+
+
+____________________________
+
+Stack:
+readFile((a),x)
+(IF((x)) THEN((readFile((a),x);(print: (x))))ELSE((print: (0)));closeRFile((a)))
+
+StmTable:
+a = 0
+
+FileTable:
+0 = test.in
+
+Out:
+
+
+____________________________
+
+Stack:
+(IF((x)) THEN((readFile((a),x);(print: (x))))ELSE((print: (0)));closeRFile((a)))
+
+StmTable:
+x = 15
+a = 0
+
+FileTable:
+0 = test.in
+
+Out:
+
+
+____________________________
+
+Stack:
+IF((x)) THEN((readFile((a),x);(print: (x))))ELSE((print: (0)))
+closeRFile((a))
+
+StmTable:
+x = 15
+a = 0
+
+FileTable:
+0 = test.in
+
+Out:
+
+
+____________________________
+
+Stack:
+(readFile((a),x);(print: (x)))
+closeRFile((a))
+
+StmTable:
+x = 15
+a = 0
+
+FileTable:
+0 = test.in
+
+Out:
+
+
+____________________________
+
+Stack:
+readFile((a),x)
+(print: (x))
+closeRFile((a))
+
+StmTable:
+x = 15
+a = 0
+
+FileTable:
+0 = test.in
+
+Out:
+
+
+____________________________
+
+Stack:
+(print: (x))
+closeRFile((a))
+
+StmTable:
+x = 50
+a = 0
+
+FileTable:
+0 = test.in
+
+Out:
+
+
+____________________________
+
+Stack:
+closeRFile((a))
+
+StmTable:
+x = 50
+a = 0
+
+FileTable:
+0 = test.in
+
+Out:
+50
+
+
+____________________________
+
+Stack:
+
+StmTable:
+x = 50
+a = 0
+
+FileTable:
+
+Out:
+50
+
+
